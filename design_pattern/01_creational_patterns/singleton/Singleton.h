@@ -13,11 +13,13 @@ public:
     HelloWorldSingleton& operator=(HelloWorldSingleton const&) = delete; // Copy assign
     HelloWorldSingleton& operator=(HelloWorldSingleton&&) = delete; // Move assign
 
+    void sayHello();
+
 private:
 
 protected:
     HelloWorldSingleton();
-}
+};
 
 } // singleton
 } // design_pattern

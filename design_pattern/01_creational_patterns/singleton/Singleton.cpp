@@ -1,22 +1,22 @@
-#ifndef __SINGLETON_H__
-#define __SINGLETON_H__
+#include <iostream>
+#include "singleton/Singleton.h"
 
-namespace design_pattern {
-namespace singleton {
+using namespace design_pattern; 
+using namespace singleton;
 
-class HelloWorldSingleton {
-public:
-    static HelloWorldSingleton getInstance();
+HelloWorldSingleton::HelloWorldSingleton()
+{
 
-private:
-    HelloWorldSingleton();
-    HelloWorldSingleton(const HelloWorldSingleton&) = delete; // copy constructor
-    HelloWorldSingleton(HelloWorldSingleton&&) = delete; // move constructor
-    HelloWorldSingleton& operator=(const HelloWorldSingleton&) = delete; // copy assign
-    HelloWorldSingleton& operator=(HelloWorldSingleton&&) = delete; // move assign
-};
+}
 
-} // singleton
-} //design_pattern
+HelloWorldSingleton& HelloWorldSingleton::getInstance()
+{
+    static HelloWorldSingleton instance;
+    return instance;
+}
 
-#endif // __SINGLETON_H__
+void HelloWorldSingleton::sayHello()
+{
+    std::cout << "HelloWorldSingleton::sayHello()" << std::endl;
+}
+

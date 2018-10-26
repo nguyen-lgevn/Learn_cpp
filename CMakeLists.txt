@@ -18,8 +18,9 @@ file(GLOB_RECURSE LEARN_CPP_SOURCES "src/*.cpp")
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/headers)
 
-add_executable(Hello main.cpp ${LEARN_CPP_SOURCES})
-target_link_libraries(Hello ${CMAKE_THREAD_LIBS_INIT})
-# build tcp server - client
-add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/tcp_server)
+message("${DESIGN_PATTERN_FILE}")
 
+#add_executable(Hello main.cpp ${LEARN_CPP_SOURCES} )
+#target_link_libraries(Hello ${CMAKE_THREAD_LIBS_INIT})
+# target_include_directories(Hello PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/design_pattern/01_creational_patterns)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/design_pattern)
