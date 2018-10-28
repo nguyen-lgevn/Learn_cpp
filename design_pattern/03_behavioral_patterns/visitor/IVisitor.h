@@ -8,9 +8,15 @@ namespace design_pattern {
 namespace visitor {
 
 class IVisitor {
-    public:
-        void visit(IElementEnglish *element) = 0;
-        void visit(IElementFrench *element) = 0;
+public:
+    virtual void visit(ElementEnglish *element) = 0;
+    virtual void visit(ElementFrench *element) = 0;
+};
+
+class Visitor: public IVisitor {
+public:
+    void visit(ElementEnglish *element);
+    void visit(ElementFrench *element);
 };
 
 } // Visitor

@@ -1,32 +1,35 @@
 #include "IElement.h"
 #include "IVisitor.h"
 
-void IElementEnglish::accept(Visitor &v)
+using namespace design_pattern;
+using namespace visitor;
+
+void ElementEnglish::accept(Visitor &v)
 {
     v.visit(this);
 }
 
-void IElementEnglish::sayHello()
+void ElementEnglish::sayHello()
 {
     this->sayHelloEnglish();
 }
 
-void IElementEnglish::sayHelloEnglish()
+void ElementEnglish::sayHelloEnglish()
 {
     std::cout << "Hello World" << std::endl;
 }
 
-void IElementFrench::visit(Visitor &v)
+void ElementFrench::accept(Visitor &v)
 {
     v.visit(this);
 }
 
-void IElementFrench::sayHello()
+void ElementFrench::sayHello()
 {
     this->sayHelloFrench();
 }
 
-void IElementFrench::sayHelloFrench()
+void ElementFrench::sayHelloFrench()
 {
     std::cout << "Bonjour" << std::endl;
 }

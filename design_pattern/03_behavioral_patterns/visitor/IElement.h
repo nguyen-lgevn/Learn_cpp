@@ -1,6 +1,8 @@
 #ifndef __IELEMENT_H__
 #define __IELEMENT_H__
 
+#include <iostream>
+
 namespace design_pattern {
 
 namespace visitor {
@@ -12,7 +14,7 @@ public:
     virtual void sayHello() = 0;
 };
 
-class IElementEnglish: public IElement
+class ElementEnglish: public IElement
 {
 public:
     void accept(Visitor &v) override;
@@ -22,7 +24,7 @@ public:
     void sayHelloEnglish();
 };
 
-class IElementFrench: public IElement
+class ElementFrench: public IElement
 {
 public:
     void accept(Visitor &v) override;
