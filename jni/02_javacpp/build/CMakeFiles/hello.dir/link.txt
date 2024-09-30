@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared  -o libhello.so CMakeFiles/hello.dir/HelloJNI.cpp.o  -Wl,-rpath,/usr/lib/jvm/java-9-oracle/lib:/usr/lib/jvm/java-9-oracle/lib/server /usr/lib/jvm/java-9-oracle/lib/libjawt.so /usr/lib/jvm/java-9-oracle/lib/server/libjvm.so 

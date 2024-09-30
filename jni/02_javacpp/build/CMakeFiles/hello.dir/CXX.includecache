@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pearl/workspace/Learn_cpp/jni/02_javacpp/HelloJNI.cpp
+jni.h
+-
+iostream
+-
+HelloJNICpp.h
+/home/pearl/workspace/Learn_cpp/jni/02_javacpp/HelloJNICpp.h
+
+/home/pearl/workspace/Learn_cpp/jni/02_javacpp/HelloJNICpp.h
+jni.h
+-
+
+/usr/lib/jvm/java-9-oracle/include/jni.h
+stdio.h
+-
+stdarg.h
+-
+jni_md.h
+/usr/lib/jvm/java-9-oracle/include/jni_md.h
+
+/usr/lib/jvm/java-9-oracle/include/linux/jni_md.h
+

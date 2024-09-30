@@ -1,0 +1,19 @@
+Start testing: Oct 08 03:27 EDT
+----------------------------------------------------------
+1/1 Testing: TestHelloJNICpp
+1/1 Test: TestHelloJNICpp
+Command: "/usr/lib/jvm/java-9-oracle/bin/java" "-Djava.library.path=/home/pearl/workspace/Learn_cpp/jni/02_javacpp/build" "-cp" "/home/pearl/workspace/Learn_cpp/jni/02_javacpp/build/HelloJNICpp.jar" "HelloJNICpp"
+Directory: /home/pearl/workspace/Learn_cpp/jni/02_javacpp/build
+"TestHelloJNICpp" start time: Oct 08 03:27 EDT
+Output:
+----------------------------------------------------------
+Hello world from C++!
+<end of output>
+Test time =   0.30 sec
+----------------------------------------------------------
+Test Passed.
+"TestHelloJNICpp" end time: Oct 08 03:27 EDT
+"TestHelloJNICpp" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 08 03:27 EDT
